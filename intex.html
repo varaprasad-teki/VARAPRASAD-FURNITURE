@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>WoodCraft Furniture | Premium Wooden Furniture</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+
+        <div class="logo">
+            WOOD<span>CRAFT</span>
+        </div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#products">Products</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <button class="cart-button" onclick="openCart()">
+            🛒 Cart <span id="cartCount">0</span>
+        </button>
+
+    </header>
+
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <p class="tagline">PREMIUM WOODEN FURNITURE</p>
+
+            <h1>
+                Furniture<br>
+                <span>Made Beautiful.</span>
+            </h1>
+
+            <p class="hero-text">
+                Discover premium wooden cots, dining tables,
+                dressing tables and handcrafted furniture
+                designed for modern homes.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#products" class="main-button">
+                    Explore Furniture
+                </a>
+
+                <a href="#contact" class="outline-button">
+                    Contact Us
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-card">
+
+            <div class="wood-logo">
+                W
+            </div>
+
+            <h3>HANDCRAFTED</h3>
+
+            <p>WOODEN FURNITURE</p>
+
+        </div>
+
+    </section>
+
+
+    <!-- CATEGORIES -->
+    <section class="categories-section">
+
+        <div class="section-title">
+
+            <p>OUR COLLECTION</p>
+
+            <h2>Shop By Category</h2>
+
+        </div>
+
+
+        <div class="categories">
+
+            <div class="category" onclick="showCategory('bed')">
+
+                <div class="category-icon">🛏️</div>
+
+                <h3>Beds & Cots</h3>
+
+                <p>Double & Triple Cots</p>
+
+            </div>
+
+
+            <div class="category" onclick="showCategory('dining')">
+
+                <div class="category-icon">🍽️</div>
+
+                <h3>Dining</h3>
+
+                <p>Dining Tables & Sets</p>
+
+            </div>
+
+
+            <div class="category" onclick="showCategory('dressing')">
+
+                <div class="category-icon">🪞</div>
+
+                <h3>Dressing Tables</h3>
+
+                <p>Bedroom Furniture</p>
+
+            </div>
+
+
+            <div class="category" onclick="showCategory('other')">
+
+                <div class="category-icon">🪑</div>
+
+                <h3>Other Furniture</h3>
+
+                <p>Chairs & Tables</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PRODUCTS -->
+    <section class="products-section" id="products">
+
+        <div class="section-title">
+
+            <p>OUR PRODUCTS</p>
+
+            <h2>Premium Furniture</h2>
+
+        </div>
+
+
+        <div class="filters">
+
+            <button onclick="showCategory('all')">
+                All
+            </button>
+
+            <button onclick="showCategory('bed')">
+                Beds
+            </button>
+
+            <button onclick="showCategory('dining')">
+                Dining
+            </button>
+
+            <button onclick="showCategory('dressing')">
+                Dressing
+            </button>
+
+            <button onclick="showCategory('other')">
+                Others
+            </button>
+
+        </div>
+
+
+        <div class="product-grid" id="productGrid">
+
+            <!-- Products will appear here -->
+
+        </div>
+
+    </section>
+
+
+    <!-- WHY US -->
+    <section class="why-us">
+
+        <div class="section-title">
+
+            <p>WHY CHOOSE US</p>
+
+            <h2>Built With Quality</h2>
+
+        </div>
+
+
+        <div class="features">
+
+            <div class="feature">
+
+                <div>🌳</div>
+
+                <h3>Quality Wood</h3>
+
+                <p>
+                    Carefully selected materials
+                    for strong and durable furniture.
+                </p>
+
+            </div>
+
+
+            <div class="feature">
+
+                <div>🛠️</div>
+
+                <h3>Expert Craftsmanship</h3>
+
+                <p>
+                    Beautiful furniture made with
+                    skilled craftsmanship.
+                </p>
+
+            </div>
+
+
+            <div class="feature">
+
+                <div>🚚</div>
+
+                <h3>Safe Delivery</h3>
+
+                <p>
+                    Carefully packed and safely
+                    delivered to your doorstep.
+                </p>
+
+            </div>
+
+
+            <div class="feature">
+
+                <div>💯</div>
+
+                <h3>Made To Last</h3>
+
+                <p>
+                    Designed for everyday use
+                    and long-lasting durability.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+
+        <div>
+
+            <p class="tagline">ABOUT WOODCRAFT</p>
+
+            <h2>
+                Where Wood Meets
+                Beautiful Design.
+            </h2>
+
+            <p>
+                We create premium wooden furniture
+                for modern homes. From elegant wooden
+                cots to beautiful dining tables and
+                dressing tables, every product is
+                designed with attention to detail.
+            </p>
+
+        </div>
+
+
+        <div class="stats">
+
+            <div>
+                <strong>500+</strong>
+                <span>Designs</span>
+            </div>
+
+            <div>
+                <strong>1000+</strong>
+                <span>Customers</span>
+            </div>
+
+            <div>
+                <strong>10+</strong>
+                <span>Years Experience</span>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+
+        <div class="section-title">
+
+            <p>GET IN TOUCH</p>
+
+            <h2>Let's Build Your Dream Furniture</h2>
+
+        </div>
+
+
+        <div class="contact-box">
+
+            <div class="contact-info">
+
+                <h3>Contact Us</h3>
+
+                <p>📍 Andhra Pradesh, India</p>
+
+                <p>📞 +91 98765 43210</p>
+
+                <p>✉️ woodcraft@example.com</p>
+
+                <a
+                    href="https://wa.me/919876543210"
+                    target="_blank"
+                    class="whatsapp">
+                    💬 WhatsApp Us
+                </a>
+
+            </div>
+
+
+            <form onsubmit="sendMessage(event)">
+
+                <input
+                    type="text"
+                    placeholder="Your Name"
+                    required>
+
+                <input
+                    type="tel"
+                    placeholder="Phone Number"
+                    required>
+
+                <input
+                    type="email"
+                    placeholder="Email Address">
+
+                <textarea
+                    rows="5"
+                    placeholder="What furniture are you looking for?">
+                </textarea>
+
+                <button
+                    type="submit"
+                    class="main-button">
+                    Send Enquiry
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="footer-logo">
+            WOODCRAFT
+        </div>
+
+        <p>
+            Premium wooden furniture for modern homes.
+        </p>
+
+        <div class="footer-links">
+
+            <a href="#home">Home</a>
+
+            <a href="#products">Products</a>
+
+            <a href="#about">About</a>
+
+            <a href="#contact">Contact</a>
+
+        </div>
+
+        <small>
+            © 2026 WoodCraft Furniture. All Rights Reserved.
+        </small>
+
+    </footer>
+
+
+    <!-- CART -->
+    <div class="cart-modal" id="cartModal">
+
+        <div class="cart-box">
+
+            <button
+                class="close"
+                onclick="closeCart()">
+                ×
+            </button>
+
+            <h2>Your Cart</h2>
+
+            <div id="cartItems"></div>
+
+            <div class="cart-total">
+
+                Total:
+                ₹<span id="cartTotal">0</span>
+
+            </div>
+
+            <button
+                class="checkout"
+                onclick="checkout()">
+                Order on WhatsApp
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+</html>
